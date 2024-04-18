@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculatur</title>
+<style>
+    .Formst{
+        height: 280px;
+        width: 173px;
+margin:auto;
+color: white;
+border: 2px solid rgb(16, 15, 15);
+background-color: rgb(231, 47, 6);
+}
+#clear{
+    margin-left: 0.1cm;
+    width: 166px;
+}
+input{
+    width: 50px;
+margin-left: 0.1cm;
+    color: black;
+}
+button{
+    border-radius: 1px solid black;
+}
+#Ans{
+    margin-left: 0.1cm;
+    margin-top: 0.2cm;
+    width: 155px;
+}
+
+</style>
+</head>
+<body>
+    <div class="Formst">
+        <form name="form">
+            <input type="text" name="answer" id="Ans"> <br> </br>
+            <input type="button" value=" 1 "  onclick="form.answer.value += '1' ">
+            <input type="button" value=" 2 "  onclick="form.answer.value += '2' ">
+            <input type="button" value=" 3"  onclick="form.answer.value += '3' ">
+<br></br>
+<input type="button" value=" 4 "  onclick="form.answer.value += '4' ">
+<input type="button" value=" 5 "  onclick="form.answer.value += '5' ">
+<input type="button" value=" 6 "  onclick="form.answer.value += '6' ">
+<br></br>
+<input type="button" value=" 7 "  onclick="form.answer.value += '7' ">
+<input type="button" value=" 8 "  onclick="form.answer.value += '8' ">
+<input type="button" value=" 9 "  onclick="form.answer.value += '9' ">
+<br></br>
+<input type="button" value=" 0 "  onclick="form.answer.value += '0' ">
+<input type="button" value=" * "  onclick="form.answer.value += '*' ">
+<input type="button" value=" / "  onclick="form.answer.value += '/' ">
+<br></br>
+<input type="button" value=" + "  onclick="form.answer.value += '+' ">
+<input type="button" value=" - "  onclick="form.answer.value += '-' ">
+<input type="button" value=" = "  onclick="form.answer.value = eval(form.answer.value)" >
+<br> </br>
+<input type="button" value=" Clear All "  onclick="form.answer.value = '' " id="clear">
+
+
+
+        </form>
+    </div>
+</body>
+</html>
